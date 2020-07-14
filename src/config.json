@@ -1,0 +1,8 @@
+{
+    "linkServerHost":"127.0.0.1",
+    "linkServerPort":5679,
+    "linkTargetHost":"127.0.0.1",
+    "linkTargetPort":22,
+    "serverPort": 5678,
+    "inPort": 5679
+}
