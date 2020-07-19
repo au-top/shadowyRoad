@@ -3,6 +3,7 @@ import { } from "./treaty"
 import { enMsg, unMsg } from "./functions"
 import { stateCode } from "./treaty"
 import fs from "fs"
+import path from "path"
 
 let netBuffter:Buffer=Buffer.concat([]);
 let linkServerObj: net.Server | null = null;
@@ -14,8 +15,7 @@ interface config {
 interface linkUserInfo {
     conn: net.Socket
 }
-
-const configConnection: config = JSON.parse(fs.readFileSync(`${__dirname}/config.json`).toString())
+const configConnection: config = JSON.parse(fs.readFileSync(`${path.resolve(__dirname,'config.json')}`).toString())
 const linkUserMap: Map<string, linkUserInfo> = new Map();
 
 let uuidToken = 1;

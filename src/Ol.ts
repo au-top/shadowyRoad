@@ -3,6 +3,7 @@ import { } from "./treaty"
 import { enMsg, unMsg } from "./functions"
 import { stateCode } from "./treaty"
 import fs from "fs"
+import path from "path"
 
 
 interface userInfo {
@@ -21,7 +22,7 @@ interface config {
     linkTargetPort: number
 }
 
-const configConnection: config = JSON.parse(fs.readFileSync(`${__dirname}/config.json`).toString())
+const configConnection: config = JSON.parse(fs.readFileSync(`${path.resolve(__dirname,'config.json')}`).toString())
 
 function getORCreateUserInfoLink(olHeadPackData: olHeadPack): Promise<userInfo> {
     return new Promise((res) => {
