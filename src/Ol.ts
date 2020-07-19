@@ -21,7 +21,7 @@ interface config {
     linkTargetPort: number
 }
 
-const configConnection: config = JSON.parse(fs.readFileSync('./config.json').toString())
+const configConnection: config = JSON.parse(fs.readFileSync(`${__dirname}/config.json`).toString())
 
 function getORCreateUserInfoLink(olHeadPackData: olHeadPack): Promise<userInfo> {
     return new Promise((res) => {

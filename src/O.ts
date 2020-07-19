@@ -15,7 +15,7 @@ interface linkUserInfo {
     conn: net.Socket
 }
 
-const configConnection: config = JSON.parse(fs.readFileSync('./config.json').toString())
+const configConnection: config = JSON.parse(fs.readFileSync(`${__dirname}/config.json`).toString())
 const linkUserMap: Map<string, linkUserInfo> = new Map();
 
 let uuidToken = 1;
