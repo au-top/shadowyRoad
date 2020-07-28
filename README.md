@@ -104,6 +104,8 @@ inPort _连接Ol端口(和linkServerPort对应二者必须相同不然无法通�
   
 
   _dist中O和Ol可以独立运行_
+  
+  _不管是dist 还是 build 文件夹中的文件 都需要config.json作为配置文件_
 
 ##### 关于加密的说明
 
