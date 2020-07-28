@@ -1,4 +1,4 @@
-tsc &&
+npx tsc &&
 mkdir ./build/dist/
 cp ./src/config.json ./build/config.json
 cp ./src/config.json ./build/dist/config.json
