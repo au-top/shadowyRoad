@@ -57,7 +57,7 @@ linkTargetPort _映射目标的端口_ port 默认 22
 _以下为O.js配置_
 
 ```
-serverPort _入口端口(访问者端口)_ 默认 22 
+serverPort _入口端口(访问者端口)_ 默认 5678
 
 inPort _连接Ol端口(和linkServerPort对应二者必须相同不然无法通讯)_ 默认 5679
 ```
