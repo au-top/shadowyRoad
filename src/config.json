@@ -1,8 +1,8 @@
 {
-    "linkServerHost":"127.0.0.1",
+    "linkServerHost":"netelf.codes",
     "linkServerPort":5679,
     "linkTargetHost":"127.0.0.1",
-    "linkTargetPort":22,
+    "linkTargetPort":1234,
     "serverPort": 5678,
     "inPort": 5679
 }
